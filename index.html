@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Slab</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/images/top-image.svg" alt="Ilustração" />
+    </header>
+
+    <main>
+      <div class="" id="info">
+        <h1>READY TO LAUNCH IN...</h1>
+        <div class="" id="timer"></div>
+        <p>Inscreva-se para saber mais sobre o lançamento</p>
+        <button id="open-modal">Inscreva-se</button>
+      </div>
+
+      <div class="" id="illustration">
+        <img
+          src="./assets/images/rocket.svg"
+          alt="Figura de um foguete decolando"
+        />
+      </div>
+
+      <!-- MODAL -->
+      <div class="modal-background invisible" id="modal-background">
+        <div class="modal" id="modal">
+          <form action="">
+            <h1>Prepare-se para a decolagem!</h1>
+            <div class="" id="form-name">
+              <label for="">Nome</label>
+              <input
+                type="text"
+                placeholder="Digite seu nome"
+                class="form-input"
+              />
+            </div>
+
+            <div class="" id="form-email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Digite seu email"
+                class="form-input"
+              />
+            </div>
+
+            <div class="buttons" id="buttons">
+              <button type="button" id="cancel-button">Cancelar</button>
+              <button type="submit" id="send-button">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <img src="./assets/images/bottom-image.svg" alt="Ilustração" />
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
