@@ -42,6 +42,10 @@ const modal = document.getElementById("modal-background");
 const openModalButton = document.getElementById("open-modal");
 const cancelModalButton = document.getElementById("cancel-button");
 const sendFormButton = document.getElementById("send-button");
+const sendMessage = document.getElementById("send-message");
+
+const timeOut = 3000;
+const removeSendMessage = () => sendMessage.classList.add("invisible");
 
 openModalButton.onclick = () => {
   modal.classList.remove("invisible");
@@ -53,4 +57,6 @@ cancelModalButton.onclick = () => {
 
 sendFormButton.onclick = () => {
   modal.classList.add("invisible");
+  sendMessage.classList.remove("invisible");
+  setTimeout(removeSendMessage, timeOut);
 };

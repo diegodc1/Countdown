@@ -20,6 +20,32 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.send-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 3rem;
+  top: 0;
+  font-size: 2rem;
+  border: 3px solid var(--purple);
+  border-radius: 40px;
+  padding: 10px;
+  height: 4rem;
+
+  color: var(--purple);
+
+  transition-duration: 2s;
+  transform: translateY(3rem);
+}
+
+.send-message.invisible {
+  visibility: hidden;
+  transform: translateY(-11rem);
+  transition-delay: 2s;
+  transition-duration: 2s;
+}
+
 main {
   max-height: 100vh;
   max-width: 200rem;
@@ -135,7 +161,10 @@ footer img {
   position: absolute;
 
   background-color: #334d4c59;
-  transition: all 0.5s linear;
+}
+
+.modal-background.invisible {
+  visibility: hidden;
 }
 
 #modal {
@@ -157,9 +186,6 @@ footer img {
   font-size: 4rem;
   color: var(--purple);
   margin: 0;
-  /* position: absolute; */
-  /* margin-bottom: 40rem; */
-  /* margin-top: 10px; */
 }
 
 #modal form {
@@ -172,8 +198,6 @@ footer img {
   justify-content: center;
 
   gap: 4rem;
-
-  /* border: 1px solid green; */
 }
 #modal form label {
   display: flex;
@@ -234,8 +258,4 @@ button:hover {
   outline: none;
   border-style: none;
   border-radius: 10px;
-}
-
-.modal-background.invisible {
-  visibility: hidden;
 }
