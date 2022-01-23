@@ -1,0 +1,135 @@
+@media (min-width: 900px) and (max-width: 1025px) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+
+  main {
+    gap: 0rem;
+    margin-left: 0rem;
+  }
+
+  #info {
+    width: 40%;
+    margin-left: 0rem;
+  }
+
+  #timer {
+    width: 80%;
+    max-width: 100%;
+  }
+  #illustration-main {
+    width: 51rem;
+    height: 50rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 889px) {
+  html {
+    font-size: 65%;
+  }
+
+  body {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main {
+    gap: 12rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #info {
+    margin-left: 4rem;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  #info h1 {
+    font-size: 3.5rem;
+    width: 45rem;
+  }
+
+  #timer {
+    width: 40rem;
+    /* max-width: 100%; */
+  }
+  #illustration-main {
+    width: 41rem;
+    height: 40rem;
+  }
+}
+
+@media (min-width: 10px) and (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  html {
+    font-size: 60%;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #illustration-top {
+    display: none;
+  }
+
+  #info {
+    margin-left: 4rem;
+    width: 100vw;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    border: 2px solid red;
+  }
+
+  #info h1 {
+    font-size: 2.5rem;
+  }
+
+  #info p {
+    font-size: 2.7rem;
+    margin-top: 3rem;
+  }
+
+  #timer p {
+    display: hidden;
+    position: absolute;
+    font-size: 0px;
+    width: 0px;
+    height: 0px;
+  }
+
+  #timer {
+    width: 10%;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  #illustration-main {
+    width: 21rem;
+    height: 20rem;
+  }
+}
